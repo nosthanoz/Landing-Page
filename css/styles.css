@@ -1,0 +1,208 @@
+*{
+  text-decoration: none;
+  margin: 0%;
+  padding: 0px;
+}
+
+/* .laila-light {
+  font-family: "Laila", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.laila-regular {
+  font-family: "Laila", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.laila-medium {
+  font-family: "Laila", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.laila-semibold {
+  font-family: "Laila", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.laila-bold {
+  font-family: "Laila", serif;
+  font-weight: 700;
+  font-style: normal;
+} */
+
+:root {
+/* Font */
+--primary-Font : "Laila", serif;
+--seccondary-font :"Montserrat", sans-serif;
+
+}
+
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--seccondary-font);
+}
+
+/* Navbar */
+.wrapper {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+.logo a{
+  font-size: 50px;
+  font-weight: 700;
+  float: left;
+  font-family: var(--primary-Font);
+  background: linear-gradient(to right, #5365F7, #4480F6);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.nav-link{
+  float: right;
+}
+
+nav{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 1px solid black;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li{
+  float: left;
+}
+nav ul li a{
+  color: black;
+  font-weight: 400;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+.link:hover,
+.link:active{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a.btn{
+  background: linear-gradient(to left, #5365F7, #4480F6);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  opacity: 0.8;
+}
+a.btn:hover{
+  opacity: 100%;
+}
+/* Navbar */
+
+/* Hero */
+section{
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+h1{
+  font-family: var(--primary-Font);
+  font-weight:800;
+  font-size: 45px;
+  width: 100%;
+  line-height: 50px;
+}
+.khusus{
+  background: linear-gradient(to right, #5365F7, #4480F6);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.kolom {
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.deskripsi {
+  font-size: 17px;
+  font-weight:400;
+  font-family: var(--seccondary-font);
+}
+
+a.btn-hero {
+  background: linear-gradient(to left, #5365F7, #4480F6);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+p{
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+a.btn-hero:hover{
+  opacity: 0.8;
+}
+/* Hero */
+
+/* Footer */
+.contact {
+  background: #2B468A;
+  padding: 50px 0px 50px 0px;
+}
+
+.footer{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.footer-section{
+  width: 20%;
+  margin: 0 auto;
+}
+
+h2{
+  font-family: var(--primary-Font);
+  font-weight: 800;
+  font-size: 50px;
+  color: white;
+  width: 100%;
+  line-height: 30px;
+}
+h3{
+  font-family: var(--primary-Font);
+  font-weight: 800;
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  line-height: 50px;
+}
+
+.contact .wrapper .footer .footer-section p{
+  color: white;
+}
+/* Footer */

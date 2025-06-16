@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #d1c4e9, #b39ddb);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .logo a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header .nav-links ul {
+  list-style: none;
+  display: flex;
+}
+
+header .nav-links ul li {
+  margin-left: 20px;
+}
+
+header .nav-links ul li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-container {
+  width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-box {
+  text-align: center;
+}
+
+.sign-in-box h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #3a3a3a;
+  margin-bottom: 20px;
+}
+
+.sign-in-box form label {
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+.sign-in-box form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn-signin {
+  width: 100%;
+  padding: 12px;
+  background-color: #6200ea;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-signin:hover {
+  background-color: #3700b3;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+}
+
+.btn-google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4285f4;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-google .google-icon {
+  margin-right: 10px;
+}
+
+footer {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+footer a {
+  color: #6200ea;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

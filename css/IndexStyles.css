@@ -1,0 +1,191 @@
+*{
+  text-decoration: none;
+  margin: 0%;
+  padding: 0px;
+}
+
+:root {
+/* Font */
+--primary-Font : "Laila", serif;
+--seccondary-font :"Montserrat", sans-serif;
+
+}
+
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--seccondary-font);
+  overflow-x: hidden;
+}
+
+
+
+/* Hero */
+.container .beranda{
+  background: #CCD3E3;
+background: radial-gradient(circle,rgba(204, 211, 227, 1) 0%, rgba(255, 255, 255, 1) 42%, rgba(211, 217, 231, 1) 80%, rgba(255, 255, 255, 1) 100%);
+}
+.beranda {
+  width: 100%;
+  margin: auto;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertikal center untuk gambar dan teks */
+}
+.container .beranda .content {
+  margin-top: 0; /* Hapus margin-top untuk mendekatkan dengan gambar */
+  margin-bottom: 0; /* Hapus margin-bottom untuk mengurangi jarak */
+  padding: 0px 20px 0px 100px; /* Tambahkan sedikit ruang di sebelah kanan */
+h2{ 
+  font-family: var(--primary-Font);
+  color: rgb(83, 108, 233);
+  font-size: 4rem;
+}
+h3{
+  font-family: var(--primary-Font);
+  color: black;
+  font-size: 4rem;
+}
+}
+
+
+/* section{
+  margin: auto;
+  display: flex;
+} */
+
+.container .beranda .content .khusus {
+  background: linear-gradient(to right, #5365F7, #4480F6);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+
+.container .beranda .content .deskripsi {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: var(--seccondary-font);
+  margin-bottom: 20px;
+}
+
+.beranda img {
+  /* max-width: 100%; Atur lebar gambar supaya tidak terlalu besar */
+  margin-top: 40px;
+  height: auto; /* Menjaga proporsi gambar */
+  margin-right: 100px;
+  width: 37.5%;
+}
+
+.container .beranda .content a.btn-hero {
+  background: linear-gradient(to left, #5365F7, #4480F6);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.container .beranda .content p{
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+.container .beranda .content a.btn-hero:hover{
+  opacity: 0.8;
+}
+/* Beranda */
+
+
+/* Tentang Kita */
+/* Tentang Kita - Gambar di kiri, teks di kanan */
+.container .tentang{
+  background: #91A0C2;
+background: linear-gradient(0deg, rgba(145, 160, 194, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+.tentang {
+  width: 100%;
+  margin: auto;
+  padding: 0px 10px 10px 10px;
+  height: 85vh;
+  display: flex;  /* Menggunakan Flexbox */
+  justify-content: space-between; /* Membuat gambar di kiri dan teks di kanan */
+  align-items: center; /* Vertikal center untuk gambar dan teks */
+}
+
+.container .tentang .content {
+  margin-top: 0; /* Hapus margin-top untuk mendekatkan dengan gambar */
+  margin-bottom: 0; /* Hapus margin-bottom untuk mengurangi jarak */
+  margin-right: 200px;/* Sedikit ruang di kiri dan kanan */
+  h2{ 
+    font-family: var(--primary-Font);
+    color: rgb(83, 108, 233);
+    font-size: 4rem;
+  }
+  h3{
+    font-family: var(--primary-Font);
+    color: black;
+    font-size: 4rem;
+  }
+}
+
+.container .tentang h1.khusus {
+  background: linear-gradient(to right, #5365F7, #4480F6);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+
+.tentang .deskripsi {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: var(--seccondary-font);
+  margin-bottom: 20px;
+}
+
+/* Gambar */
+.tentang img {
+  height: auto; /* Menjaga proporsi gambar */
+  max-width: 200%; /* Gambar akan mengambil 40% dari lebar section */
+  margin-left: 200px; /* Memberikan jarak antara gambar dan teks */
+}
+
+/* Tombol di Tentang */
+.tentang .btn-tentang {
+  background: linear-gradient(to left, #5365F7, #4480F6);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tentang .btn-tentang:hover {
+  opacity: 0.8;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+  .tentang {
+    flex-direction: column; /* Untuk perangkat mobile, gambar dan teks berada di atas dan bawah */
+    justify-content: center; /* Menyelaraskan teks dan gambar ke tengah */
+  }
+
+  .tentang img {
+    max-width: 80%; /* Gambar akan mengambil lebih banyak ruang di perangkat kecil */
+    margin-left: 0;
+    margin-bottom: 20px; /* Memberikan jarak antara gambar dan teks */
+  }
+
+  .tentang .content {
+    width: 100%; /* Teks akan mengambil lebar penuh pada perangkat kecil */
+    padding: 0px 10px; /* Memberikan padding sedikit */
+  }
+}
+
+/* Tentang Kita */
+

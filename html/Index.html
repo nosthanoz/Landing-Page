@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MogaSehat</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../css/NavbarStyles.css">
+  <link rel="stylesheet" href="../css/IndexStyles.css">
+  <link rel="stylesheet" href="../css/FooterStyles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Candal&family=Laila:wght@300;400;500;600;700&family=Lilita+One&display=swap" rel="stylesheet">
@@ -14,62 +16,138 @@
 </head>
 <body>
   <nav>
-    <div class="wrapper">
-      <div class="logo" > <a href="">MogaSehat</a></div>
+    <div class="nav-container">
+      <div class="logo"> 
+        <a href="">MogaSehat</a>
+      </div>
       <div class="nav-link">
         <ul>
-          <li><a href= "#beranda" class="link">Beranda</a></li>
+          <li><a href= "#" class="link">Beranda</a></li>
           <li><a href="#riwayat" class="link">Riwayat Keluhan</a></li>
           <li><a href="#tentang" class="link">Tentang Kita</a></li>
-          <li><a href="#" class="btn">Sign Up</a></li>
-
         </ul>
+      </div>
+      <div class="sign-up">
+       <a href="#" class="btn">Sign Up</a>
+      </div>
+       <!-- Hamburger Menu -->
+       <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
     </div>
   </nav>
-  <div class="wrapper">
-    <!-- Hero -->
-    <section id="beranda">
-         <div class="kolom">
-        <h1 class="khusus">Periksa Online</h1>
-        <h1>untuk Kemudahan <br>kesehatan anda.</h1>
+
+<div class="container">
+    <!-- Beranda -->
+    <section class="beranda">
+      <div class="content">
+        <h2 class="khusus">Periksa Online</h2>
+        <h3>untuk Kemudahan <br>kesehatan anda.</h3>
         <p class="deskripsi">Mulai sekarang anda dapat memeriksakan kondisi kesehatan anda 
           <br>hanya dengan duduk manis di rumah.</p>
-          <p><a href="" class="btn-hero">Mulai Periksa</a></p>
+        <p><a href="" class="btn-hero">Mulai Periksa</a></p>
       </div>
-      <img src="Doktor.png" alt="">
-   
+      <img src="../assets/img/dokter.png" alt="Dokter Menyampaikan Informasi" />
     </section>
-    <!-- Hero -->
      <!-- Tentang Kita -->
-      <section id="tentang">
-        <img src="Sakit.png" alt="">
-        <div class="kolom">
-          <h1 class="khusus">MogaSehat</h1>
-          <h1>Kita Sudah Ada Dari <br>Tahun 1990</h1>
-          <p class="deskripsi">Kami akan senantiasa memberikan <br> layanan terbaik dengan di dukung oleh dokter dan tenaga medis yang <br>berkualitas.</p>
-          <p><a href="" class="btn-hero">Lokasi Kami</a></p>
-
-        </div>
-      </section>
-     <!-- Tentang Kita -->
-  </div>
-  <div class="contact">
-    <div class="wrapper">
-      <div class="footer">
-        <div class="footer-section">
-          <h2>MogaSehat</h2>
-          <p>Kami akan senentiasa memberikan <br> layanan terbaik.</p>
-        </div>
-        <div class="footer-section">
-          <h3>Hubungi Kami</h3>
-          <p>mogasehat@gmail.com</p>
-          <p>(+62) 897-5892</p>
-          <p>Jl.Cempaka, Semarang Tengah, Semarang</p>
-        </div>
+     <section class="tentang" id="tentang">
+      <img src="../assets/img/Sakit.png" alt="Tentang Kita" />
+      <div class="content">
+        <h2 class="khusus">MogaSehat</h2>
+        <h3>Kita Sudah Ada Dari <br>Tahun 1990</h3>
+        <p class="deskripsi">Kami akan senantiasa memberikan <br> layanan terbaik dengan di dukung oleh dokter dan tenaga medis yang <br>berkualitas.</p>
+        <p><a href="" class="btn-tentang">Lokasi Kami</a></p>
       </div>
+     
+    </section>
+    <!-- Tentang Kita -->
     </div>
-  </div>
+        <!-- Content -->
+         <!-- Footer -->
+         <footer>
+          <div class="container-footer">
+              <div class="col-1">
+                <a href="#">MogaSehat</a>
+                  <p>Kami akan senantiasa memberikan layanan yang terbaik,Kami berkomitmen untuk memberikan solusi kesehatan yang mudah diakses, cepat, dan efektif melalui komunikasi yang jelas dan profesional.
+                  </p>
+              </div>
+              <div class="col-2">
+                  <h3>Quick Links</h3>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Categories</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Services</a></li>
+                  </ul>
+              </div>
+              <div class="col-3">
+                  <h3>Services</h3>
+                  <ul>
+                      <li><a href="#">HTML</a></li>
+                      <li><a href="#">CSS</a></li>
+                      <li><a href="#">JavaScript</a></li>
+                      <li><a href="#">React</a></li>
+                      <li><a href="#">Python</a></li>
+                      <li><a href="#">C++</a></li>
+                  </ul>
+              </div>
+              <div class="col-4">
+                  <h3>Newsletter</h3>
+                  <form>
+                      <i class="far fa-envelope"></i>
+                      <input type="email" placeholder="Enter your email" required>
+                      <button><i class="fas fa-arrow-right"></i></button>
+                  </form>
+                  <div class="social-icons">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-2">
+              <p>© 2021 | Made with ❤️ by Mubashar Dev. All Rights Reserved.</p>
+          </div>
+      </footer>
+         <!-- Footer -->
+    
+
+
+  <!-- js -->
+  <script>
+    // Ambil semua elemen navlink
+    const navLinks = document.querySelectorAll('.nav-link a');
+
+    // Loop untuk setiap navlink
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        // Hapus kelas 'active' dan 'inactive' dari semua navlink
+        navLinks.forEach(item => {
+          item.classList.remove('active');
+          item.classList.add('inactive');
+        });
+
+        // Tambahkan kelas 'active' pada link yang diklik
+        this.classList.add('active');
+        this.classList.remove('inactive');
+      });
+      
+    });
+
+     // Fungsi untuk membuka dan menutup menu
+     function toggleMenu() {
+      const navLinks = document.querySelector('.nav-link');
+      const hamburger = document.querySelector('.hamburger');
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    }
+  </script>
+   <!-- js -->
 </body>
 
 </html>

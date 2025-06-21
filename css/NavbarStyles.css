@@ -1,0 +1,168 @@
+/* Navbar */
+.nav-container {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  padding:  20px 50px;
+  height: 7vh;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.logo a{
+  font-size: 60px;
+  font-weight: 700;
+  float: left;
+  font-family: var(--primary-Font);
+  background: linear-gradient(to right, #5365F7, #4480F6);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.nav-link{
+  display: flex;
+  justify-content: center;
+  flex-grow: 1; 
+}
+
+nav{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  line-height: 80px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li{
+  margin: 0 20px;
+}
+nav ul li a{
+  color: #333;
+  font-weight: 500;
+  font-family: var(--seccondary-font);
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a:active {
+
+  color: #5365F7;
+  transform: translateY(-2px); /* Efek hover naik */
+}
+nav ul li a.active {
+  font-weight: bold;
+  color: #5365F7; /* Biru untuk link yang aktif */
+
+}
+
+nav ul li a.inactive {
+  color: #aaa; /* Abu-abu untuk navlink yang tidak terklik */
+}
+.sign-up {
+  align-items: center;
+  
+}
+a.btn{
+  background: linear-gradient(to left, #5365F7, #4480F6);
+  border-radius: 20px;
+  padding: 12px 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  
+}
+
+a.btn:hover{
+  opacity: 0.8;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 3px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.nav-link.active {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-link.active ul {
+  display: block;
+}
+
+.nav-link.active ul li {
+  margin: 15px 0;
+}
+
+.nav-link.active ul li a {
+  color: #5365F7; /* Warna untuk navlink yang aktif */
+}
+
+nav ul li a.active {
+  color: #5365F7; /* Biru untuk link yang aktif */
+}
+
+/* Responsif untuk navbar */
+@media (max-width: 768px) {
+  .nav-link {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-link.active {
+    display: block;
+    background-color: #fff;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .sign-up {
+    margin-top: 20px;
+  }
+}
+/* Hamburger */
+
+/* Navbar */

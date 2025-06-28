@@ -1,0 +1,204 @@
+
+:root {
+  /* Font */
+  --primary-Font : "Laila", serif;
+  --seccondary-font :"Montserrat", sans-serif;
+  
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container-content {
+  height: 90vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: #CCD3E3;
+  background: radial-gradient(circle,rgba(204, 211, 227, 1) 0%, rgba(255, 255, 255, 1) 42%, rgba(211, 217, 231, 1) 80%, rgba(255, 255, 255, 1) 100%);
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 600px;
+  height: 600px;
+  background-color:  white
+
+}
+
+.card_title {
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  background: linear-gradient(to right, #5365F7, #4480F6);
+  width: 100%;
+  height: 8%;
+ 
+  
+}
+.card_title img{
+  width: 6%;
+  float: left;
+  margin: 5px 0px 5px 45px;
+}
+
+.card_title h2 {
+  -webkit-background-clip: text;
+  color: white;
+  font-size: 20px;
+  font-family: var(--primary-Font);
+  margin-bottom: 20px;
+  padding: 10px 10px 0px 5px;
+  float: left;
+}
+.form{
+  font-size: 18px;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-keluhan{
+  font-size: 18px;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 48px;
+}
+.form-row {
+  display: flex;
+  margin-bottom: 16px;
+}
+.form-row p{
+  margin-top: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.form .data,
+.form-keluhan .data {
+  margin-right: 10px;
+  width: 40%; 
+}
+.form .required,
+.form-keluhan .required {
+  color: red;
+}
+
+.form .row select,
+.form-keluhan select{
+  float: right;
+  margin: 10px 3px 10px 0px;
+  width: 80%;
+  background-color: transparent;
+  border: 1px solid #a7a7a7;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.form input,
+.form-keluhan input{
+  margin: 10px 0px;
+  width: 80%;
+  background-color: transparent;
+  border: 1px solid #a7a7a7;
+  padding: 13px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.form-keluhan .bb{
+  background-color: transparent;
+  margin: 10px 200px 0rem 0rem;
+  width: 30%;
+  border: 1px solid #a7a7a7;
+  padding: 13px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.form #tanggal_lahir{
+ font-family: Arial, Helvetica, sans-serif;
+  color: #a7a7a7;
+  margin: 10px 119px 0px 0px;
+  width: 50%;
+  background-color: transparent;
+  border: 1px solid #a7a7a7;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.jenis_kelamin{
+  margin: 10px 119px 0px 0px;
+  width: 50%;
+  background-color: transparent;
+  border: 1px solid #a7a7a7;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  padding-right: 40px;
+  color: #a7a7a7;
+}
+/* CSS HALAMAN KELUHAN */
+.keluhan{
+  margin: 10px 0;
+  width: 80%;
+  background-color: transparent;
+  border: 1px solid #a7a7a7;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  color: #a7a7a7;
+}
+/* CSS HALAMAN KELUHAN */
+.container-button{
+  width: 100%;
+  border-top: 1px solid gray;
+  padding: 15px 45px;
+  
+}
+.container-button .kembali{
+ 
+  font-size: 18px;
+  border :none;
+  cursor: pointer;
+  background: none;
+  color: #6b6b6b;
+  justify-content: center;
+  align-items: center;
+  transition: .2s;
+  height: 2.5rem;
+}
+.container-button .lanjut{
+  font-size: 18px;
+  float: right;
+  border :none;
+  transition: .2s;
+  cursor: pointer;
+  background: none;
+  color: #000000;
+  height: 2.5rem;   
+}
+
+.container-button .kembali:hover,
+.container-button .kembali:focus{
+  color: rgb(233, 83, 83);
+  border-color: var(--focus);
+  transform: translateY(-.2rem);
+  border: 0px;
+  border-radius: 100rem;
+}
+.container-button .lanjut:hover,
+.container-button .lanjut:focus{
+  color: rgb(83, 108, 233);
+  border-color: var(--focus);
+  transform: translateY(-.2rem);
+  border: 0px;
+  border-radius: 100rem;
+  
+}
+
+/* Content */

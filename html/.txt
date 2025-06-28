@@ -13,7 +13,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <nav>
@@ -48,61 +47,20 @@
         <h3>untuk Kemudahan <br>kesehatan anda.</h3>
         <p class="deskripsi">Mulai sekarang anda dapat memeriksakan kondisi kesehatan anda 
           <br>hanya dengan duduk manis di rumah.</p>
-          <!-- modal 1 -->
-<div class="box">
-  <a href="#m1-o" class="link-1" id="m1-c">Mulai Periksa</a>
-  <div class="modal-container" id="m1-o">
-    <!-- <div class="modal-container" id="m1-o" style="--m-background: transparent;"> -->
-    <div class="modal">
-      <h1 class="modal__title">Atur Periksa</h1>
-      <form class="slct-poli">
-        <p>
-        <label for="poli-select">Pilih Poliklinik :</label>
-    
-         <select id="poli-select">
-          <option value="" disabled selected>Silahkan pilih poli klinik </option>
-          <option value="cat">
-          <span class="option-label">Poli Kandungan dan Kebidanan</span>
-          </option>
-           <option value="dog">
-        <span class="option-label">Poli THT (Telinga, Hidung, Tenggorokan)</span>
-        </option>
-        <option value="hamster">
-        <span class="option-label">Poli Bedah Umum</span>
-        </option>
-        <option value="chicken">
-          <span class="option-label">Poli Anak</span>
-        </option>
-    </select>
-
-  </p>
-</form>
-      <button class="modal__btn">Lanjut &rarr;</button>
-      <a href="#" class="link-2"></a>
-    </div>
-  </div>
-</div>
-        <!-- <p><a href="" class="btn-hero">Mulai Periksa</a></p> -->
+        <p><a href="" class="btn-hero">Mulai Periksa</a></p>
       </div>
       <img src="../assets/img/dokter.png" alt="Dokter Menyampaikan Informasi" />
     </section>
-
      <!-- Tentang Kita -->
      <section class="tentang" id="tentang">
+      <img src="../assets/img/Sakit.png" alt="Tentang Kita" />
       <div class="content">
-        <div class="berita">
-          <h2 class="khusus">Berita MogaSehat</h2>
-        </div>
-        <div class="deskripsi-berita">
-          <div class="title-berita">
-          <h3>Keberhasilan Pak Bambang</h3>
-          </div>
-         <p> <span>Semarang, Juni 15 2025 - </span>Pak Bambang berhasil mencegah<br>infeksi telinga setelah segera memeriksakan diri melalui <br>layanan kesehatan online "Moga Sehat" saat merasakan<br>gejala yang tidak biasa. Dengan langkah cepat dan tepat,<br>ia dapat menangani masalah kesehatan tersebut sebelum<br>berkembang lebih lanjut.</p>
-       </div>
-
-        
+        <h2 class="khusus">MogaSehat</h2>
+        <h3>Kita Sudah Ada Dari <br>Tahun 1990</h3>
+        <p class="deskripsi">Kami akan senantiasa memberikan <br> layanan terbaik dengan di dukung oleh dokter dan tenaga medis yang <br>berkualitas.</p>
         <p><a href="" class="btn-tentang">Lokasi Kami</a></p>
       </div>
+     
     </section>
     <!-- Tentang Kita -->
     </div>
@@ -187,12 +145,7 @@
       const hamburger = document.querySelector('.hamburger');
       navLinks.classList.toggle('active');
       hamburger.classList.toggle('active');
-    };
-     // Fungsi untuk menampilkan dropdown hanya saat klik
-  function toggleDropdown() {
-    const selectElement = document.getElementById('poli-select');
-    selectElement.classList.toggle('active'); // Menambahkan/menanggalkan class active untuk kontrol
-  }
+    }
   </script>
    <!-- js -->
 </body>

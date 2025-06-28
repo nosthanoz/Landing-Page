@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MogaSehat</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/NavbarStyles.css">
+  <link rel="stylesheet" href="../css/DataDiri.css">
+  <link rel="stylesheet" href="../css/Alert.css">
+  <link rel="stylesheet" href="../css/FooterStyles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Candal&family=Laila:wght@300;400;500;600;700&family=Lilita+One&display=swap" rel="stylesheet">
@@ -14,95 +17,184 @@
 </head>
 <body>
   <nav>
-    <div class="wrapper">
-      <div class="logo" > <a href="">MogaSehat</a></div>
+    <div class="nav-container">
+      <div class="logo"> 
+        <a href="">MogaSehat</a>
+      </div>
       <div class="nav-link">
         <ul>
-          <li><a href= "#beranda" class="link">Beranda</a></li>
+          <li><a href= "#" class="link">Beranda</a></li>
           <li><a href="#riwayat" class="link">Riwayat Keluhan</a></li>
           <li><a href="#tentang" class="link">Tentang Kita</a></li>
-          <li><a href="#" class="btn">Sign Up</a></li>
-
         </ul>
+      </div>
+       <!-- Hamburger Menu -->
+       <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
     </div>
   </nav>
-  <div class="wrapper">
-    <!-- Hero -->
-    <section id="data-diri-container">
-      <div class="data-diri-box">
-        <h2>Keluhan</h2>
-        <form action="#" method="POST">
-          <form action="#" method="POST">
-            <label for="keluhan1">Keluhan 1 <span class="required">*</span></label>
-            <select id="keluhan1" name="keluhan1" required>
-                <option value="">---Pilih Keluhan 1---</option>
-                <option value="sakit-kepala">Sakit Kepala</option>
-                <option value="demam">Demam</option>
-                <option value="batuk">Batuk</option>
-            </select>
-
-            <label for="keluhan2">Keluhan 2 <span class="required">*</span></label>
-            <select id="keluhan2" name="keluhan2" required>
-                <option value="">---Pilih Keluhan 2---</option>
-                <option value="nyeri-otot">Nyeri Otot</option>
-                <option value="mual">Mual</option>
-                <option value="susah-tidur">Susah Tidur</option>
-            </select>
-
-            <label for="keluhan3">Keluhan 3 <span class="required">*</span></label>
-            <select id="keluhan3" name="keluhan3" required>
-                <option value="">---Pilih Keluhan 3---</option>
-                <option value="pusing">Pusing</option>
-                <option value="sesak-nafas">Sesak Nafas</option>
-                <option value="nyeri-dada">Nyeri Dada</option>
-            </select>
-
-            <label for="berat-badan">Berat Badan <span class="required">*</span></label>
-            <input type="number" id="berat-badan" name="berat-badan" required>
-
-            <label for="umur">Umur <span class="required">*</span></label>
-            <input type="number" id="umur" name="umur" required>
-
-            <div class="buttons">
-                <button type="button" class="back-btn">Kembali</button>
-                <button type="submit" class="submit-btn">Kirim</button>
-            </div>
-      </form>
-      </div>
-      <div class="alert" id="alertBox">
-        <div class="alert-content">
-            <h3>Keluhan gagal Dikirim</h3>
-            <p>Eror!.</p>
-            <button class="close-btn" onclick="closeAlert()">Tutup</button>
+    <!-- Content -->
+    <div class="container-content">
+      <div class="card">
+        <div class="card_title">
+          <img src="../assets/img/person.png" alt="">
+          <h2>Keluhan</h2>
         </div>
+        <div class="form-keluhan">
+          <form action="" method="post">
+           
+            <div class="form-row">
+              <p class="data">Keluhan <span class="required">*</span></p>
+              <div class="row">
+                <select name="keluhan" id="keluhan" class="keluhan" >
+                  <option value="" disabled selected>---Pilih Keluhan 1-- </option>
+                  <option value="keluhan">Kepala Pusing Kunang-Kunang </option>
+                  <option value="keluhan">Bercak Merah Pada Muka </option>
+                  <option value="keluhan">Mual Muntah </option>
+                  <option value="keluhan">Flu Disertai Batuk </option>
+                </select>
+                
+                  <select name="keluhan" id="keluhan" class="keluhan" >
+                    <option value="" disabled selected>---Pilih Keluhan 2-- </option>
+                    <option value="keluhan">Kepala Pusing Kunang-Kunang </option>
+                    <option value="keluhan">Bercak Merah Pada Muka </option>
+                    <option value="keluhan">Mual Muntah </option>
+                    <option value="keluhan">Flu Disertai Batuk </option>
+                  </select>
+                
+                
+                  <select name="keluhan" id="keluhan" class="keluhan" >
+                    <option value="" disabled selected>---Pilih Keluhan 3-- </option>
+                    <option value="keluhan">Kepala Pusing Kunang-Kunang </option>
+                    <option value="keluhan">Bercak Merah Pada Muka </option>
+                    <option value="keluhan">Mual Muntah </option>
+                    <option value="keluhan">Flu Disertai Batuk </option>
+                  </select>
+                
+                
+                  <select name="keluhan" id="keluhan" class="keluhan" >
+                    <option value="" disabled selected>---Pilih Keluhan 4-- </option>
+                    <option value="keluhan">Kepala Pusing Kunang-Kunang </option>
+                    <option value="keluhan">Bercak Merah Pada Muka </option>
+                    <option value="keluhan">Mual Muntah </option>
+                    <option value="keluhan">Flu Disertai Batuk </option>
+                  </select>
+                
+              </div>    
+            </div>
+
+            <div class="form-row">
+              <p class="data">Berat Badan <span class="required">*</span></p>
+              <input class="bb" type="text" name="nama" placeholder="" id="nama" />
+            </div>
+            <div class="form-row">
+              <p class="data">Umur <span class="required">*</span></p>
+              <input class="bb" type="text" name="nama" placeholder="" id="nama" />
+            </div>
+          </form>
+        </div>
+        <div class="container-button">
+          <button class="kembali">Kembali</button>
+          <a href="#m1-o" class="link-1" id="m1-c">Kirim</a>
+          <div class="modal-container" id="m1-o">
+            <div class="modal">
+              <h3 class="modal__title">Keluhan Berhasil Dikirim</h3>
+              <p>Anda Mendapatkan Nomor Antrian :</p>
+              <h2>01</h2>
+              <p>Jawaban akan dikirim melalui halaman <br> Riwayat Keluhan.</p>
+              <div class="tutup">
+                <a href="#" class="link-2">Tutup</a>
+              </div>
+              
+          </div>
+
+      </div>
+      </div>
     </div>
-    </section>
+    <!-- Content -->
 
   </div>
-
-  <div class="footer">
-    <div class="wrapper">
-      <div class="footer-section">
-        <p>Copyright © 2025 | All Rights Reserved</p>
-      </div>
-      <div class="footer-section">
-        <p><a href="#">Terms and Conditions</a> | <a href="#">Privacy Policy</a></p>
-      </div>
-    </div>
-  </div>
+         <!-- Footer -->
+         <footer>
+          <div class="container-footer">
+              <div class="col-1">
+                <a href="#">MogaSehat</a>
+                  <p>Kami akan senantiasa memberikan layanan yang terbaik,Kami berkomitmen untuk memberikan solusi kesehatan yang mudah diakses, cepat, dan efektif melalui komunikasi yang jelas dan profesional.
+                  </p>
+              </div>
+              <div class="col-2">
+                  <h3>Quick Links</h3>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Categories</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Services</a></li>
+                  </ul>
+              </div>
+              <div class="col-3">
+                  <h3>Services</h3>
+                  <ul>
+                      <li><a href="#">HTML</a></li>
+                      <li><a href="#">CSS</a></li>
+                      <li><a href="#">JavaScript</a></li>
+                      <li><a href="#">React</a></li>
+                      <li><a href="#">Python</a></li>
+                      <li><a href="#">C++</a></li>
+                  </ul>
+              </div>
+              <div class="col-4">
+                  <h3>Newsletter</h3>
+                  <form>
+                      <i class="far fa-envelope"></i>
+                      <input type="email" placeholder="Enter your email" required>
+                      <button><i class="fas fa-arrow-right"></i></button>
+                  </form>
+                  <div class="social-icons">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-2">
+              <p>© 2021 | Made with ❤️ by Mubashar Dev. All Rights Reserved.</p>
+          </div>
+      </footer>
+         <!-- Footer -->
 
   <script>
-    function closeAlert() {
-        document.getElementById('alertBox').style.display = 'none';
-    }
+     // Ambil semua elemen navlink
+     const navLinks = document.querySelectorAll('.nav-link a');
 
-    // Simulate alert box display after form submission
-    document.querySelector('.submit-btn').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.getElementById('alertBox').style.display = 'block';
+// Loop untuk setiap navlink
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    // Hapus kelas 'active' dan 'inactive' dari semua navlink
+    navLinks.forEach(item => {
+      item.classList.remove('active');
+      item.classList.add('inactive');
     });
-</script>
+
+    // Tambahkan kelas 'active' pada link yang diklik
+    this.classList.add('active');
+    this.classList.remove('inactive');
+  });
+  
+});
+     // Fungsi untuk membuka dan menutup menu
+     function toggleMenu() {
+      const navLinks = document.querySelector('.nav-link');
+      const hamburger = document.querySelector('.hamburger');
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    }
+  </script>
 </body>
 
 </html>

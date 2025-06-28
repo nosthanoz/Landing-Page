@@ -6,6 +6,7 @@
   <title>MogaSehat</title>
   <link rel="stylesheet" href="../css/NavbarStyles.css">
   <link rel="stylesheet" href="../css/DataDiri.css">
+  <link rel="stylesheet" href="../css/Alert.css">
   <link rel="stylesheet" href="../css/FooterStyles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,43 +41,76 @@
       <div class="card">
         <div class="card_title">
           <img src="../assets/img/person.png" alt="">
-          <h2>Data Diri</h2>
+          <h2>Keluhan</h2>
         </div>
-        <div class="form">
+        <div class="form-keluhan">
           <form action="" method="post">
+           
             <div class="form-row">
-              <p class="data">NIK <span class="required">*</span></p>
-              <input type="text" name="nik" placeholder="Silahkkan Masukan NIK Anda " id="nik" />
+              <p class="data">Keluhan <span class="required">*</span></p>
+              <div class="row">
+                <select name="keluhan" id="keluhan" class="keluhan" >
+                  <option value="" disabled selected>---Pilih Keluhan 1-- </option>
+                  <option value="keluhan">Kepala Pusing Kunang-Kunang </option>
+                  <option value="keluhan">Bercak Merah Pada Muka </option>
+                  <option value="keluhan">Mual Muntah </option>
+                  <option value="keluhan">Flu Disertai Batuk </option>
+                </select>
+                
+                  <select name="keluhan" id="keluhan" class="keluhan" >
+                    <option value="" disabled selected>---Pilih Keluhan 2-- </option>
+                    <option value="keluhan">Kepala Pusing Kunang-Kunang </option>
+                    <option value="keluhan">Bercak Merah Pada Muka </option>
+                    <option value="keluhan">Mual Muntah </option>
+                    <option value="keluhan">Flu Disertai Batuk </option>
+                  </select>
+                
+                
+                  <select name="keluhan" id="keluhan" class="keluhan" >
+                    <option value="" disabled selected>---Pilih Keluhan 3-- </option>
+                    <option value="keluhan">Kepala Pusing Kunang-Kunang </option>
+                    <option value="keluhan">Bercak Merah Pada Muka </option>
+                    <option value="keluhan">Mual Muntah </option>
+                    <option value="keluhan">Flu Disertai Batuk </option>
+                  </select>
+                
+                
+                  <select name="keluhan" id="keluhan" class="keluhan" >
+                    <option value="" disabled selected>---Pilih Keluhan 4-- </option>
+                    <option value="keluhan">Kepala Pusing Kunang-Kunang </option>
+                    <option value="keluhan">Bercak Merah Pada Muka </option>
+                    <option value="keluhan">Mual Muntah </option>
+                    <option value="keluhan">Flu Disertai Batuk </option>
+                  </select>
+                
+              </div>    
+            </div>
+
+            <div class="form-row">
+              <p class="data">Berat Badan <span class="required">*</span></p>
+              <input class="bb" type="text" name="nama" placeholder="" id="nama" />
             </div>
             <div class="form-row">
-              <p class="data">Nama Lengkap <span class="required">*</span></p>
-              <input type="text" name="nama" placeholder="Silahkan Masukan Nama Lengkap Anda" id="nama" />
-            </div>
-            <div class="form-row">
-              <p class="data">Tempat Lahir <span class="required">*</span></p>
-              <input type="text" name="nama" placeholder="Tempat lahir Anda" id="nama-2" />
-            </div>
-            <div class="form-row">
-              <p class="data">Tanggal Lahir <span class="required">*</span></p>
-              <input type="date" name="tanggal_lahir" placeholder="" id="tanggal_lahir" />
-            </div>
-            <div class="form-row">
-              <p class="data">Jenis Kelamin <span class="required">*</span></p>
-              <select name="jenis_kelamin" id="jenis_kelamin" class="jenis_kelamin" >
-                <option class="dis" value="" disabled selected >Pilih Jenis Kelamin </option>
-                <option value="laki-laki">Laki-laki </option>
-                <option value="perempuan">Perempuan</option>
-              </select>
-            </div>
-            <div class="form-row">
-              <p class="data">Alamat Domisili <span class="required">*</span></p>
-              <input type="text" name="nama" placeholder="Alamat Domisili Anda Sekarang" id="nama" />
+              <p class="data">Umur <span class="required">*</span></p>
+              <input class="bb" type="text" name="nama" placeholder="" id="nama" />
             </div>
           </form>
         </div>
         <div class="container-button">
           <button class="kembali">Kembali</button>
-          <button class="lanjut">Lanjut &rarr;</button>
+          <a href="#m1-o" class="link-1" id="m1-c">Kirim</a>
+          <div class="modal-container" id="m1-o">
+            <div class="modal">
+              <h3 class="modal__title-gagal">Keluhan Gagal Dikirim</h3>
+
+              <h2>Error!</h2>
+              
+              <div class="tutup-gagal">
+                <a href="#" class="link-2-gagal">Tutup</a>
+              </div>
+              
+          </div>
+
       </div>
       </div>
     </div>

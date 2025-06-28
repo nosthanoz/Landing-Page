@@ -1,0 +1,147 @@
+:root {
+  /* Font */
+  --primary-Font : "Laila", serif;
+  --seccondary-font :"Helvetica", sans-serif;
+  --light: black;
+  --focus: linear-gradient(to left, #5365F7, #4480F6);
+  --border-color: hsla(0, 0%, 100%, .2);
+  --global-background: radial-gradient(circle,rgb(23, 76, 200) 0%, rgba(255, 255, 255, 1) 42%, rgba(211, 217, 231, 1) 80%, rgba(255, 255, 255, 1) 100%);
+  --background:  hsl(222, 38%, 95%);
+  --shadow-1: hsla(236, 50%, 50%, .3);
+  --shadow-2: hsla(236, 50%, 50%, .4);
+  }
+
+.container-button a.link-1{
+  font-size: 18px;
+  float: right;
+  border: 1px solid black;
+  transition: .2s;
+  cursor: pointer;
+  background: none;
+  color: #000000;
+  transition: .2s;
+  border-radius: 20px;
+  width: 7rem;
+  height: 2.5rem;
+  text-decoration:none ;
+  text-align: center;
+  padding: 8px 10px 8px 10px;
+}
+
+.container-button a.link-1:focus,
+.container-button a.link-1:hover{
+background: var(--focus);
+  border-color: var(--focus);
+  color: white;
+}
+.link-1:hover,
+.link-1:focus {
+  transform: translateY(-.2rem);
+  box-shadow: 0 0 4.4rem .2rem var(--shadow-2);
+}
+.link-1:focus {
+  box-shadow:
+    0 0 4.4rem .2rem var(--shadow-2),
+    0 0 0 .4rem var(--global-background),
+    0 0 0 .5rem var(--focus);
+}
+
+.modal-container{
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: var(--m-background);
+}
+.modal-container:target {
+  display: flex;
+}
+.modal {
+  width: 38rem;
+  height: 27rem;
+  border-radius: .8rem;
+  color: var(--light);
+  background: white;
+  box-shadow: var(--m-shadow, .4rem .4rem 10.2rem .2rem) rgb(97, 97, 97);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.modal__title {
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-family: var(--primary-Font);
+  background:  #02D417;
+  color: white;
+}
+.modal p{
+  font-size: 24px;
+ font-family: var(--seccondary-font);
+}
+.modal h2{
+  margin-top: 1=20px;
+  margin-bottom: 20px;
+  font-size: 7rem;
+}
+.tutup{
+  margin-top: 3rem;
+}
+.link-2 {
+  border: 1px solid #02D417;
+  padding: 0.5rem 1rem;
+  border-radius: 100rem;
+  color: white;
+  background: #02D417;
+  font-size: 20px;
+  font-family: var(--seccondary-font);
+  letter-spacing: .2rem;
+  transition: .2s;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.link-2:hover,
+.link-2:focus,
+.link-2-gagal:hover,
+.link-2-gagal:focus {
+  background: white;
+  border: 1px solid #000000;
+  transform: translateY(-.2rem);
+
+  border-radius: 100rem;
+  color: rgb(0, 0, 0);
+}
+/* Gagal */
+.modal__title-gagal {
+  padding: 10px;
+  margin-bottom: 80px;
+  font-size: 2rem;
+  font-family: var(--primary-Font);
+  background:  #f11717;
+  color: white;
+}
+.tutup-gagal{
+  margin-top: 5rem;
+}
+.link-2-gagal {
+  padding: 0.5rem 1rem;
+  border-radius: 100rem;
+  color: white;
+  background: #f11717;
+  font-size: 20px;
+  font-family: var(--seccondary-font);
+  letter-spacing: .2rem;
+  transition: .2s;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+/* Gagal */

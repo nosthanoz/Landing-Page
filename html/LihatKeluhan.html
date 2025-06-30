@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MogaSehat</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../css/NavbarStyles.css">
+  <link rel="stylesheet" href="../css/DetailKeluhan.css">
+  <link rel="stylesheet" href="../css/FooterStyles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Candal&family=Laila:wght@300;400;500;600;700&family=Lilita+One&display=swap" rel="stylesheet">
@@ -14,78 +16,194 @@
 </head>
 <body>
   <nav>
-    <div class="wrapper">
-      <div class="logo" > <a href="">MogaSehat</a></div>
+    <div class="nav-container">
+      <div class="logo"> 
+        <a href="">MogaSehat</a>
+      </div>
       <div class="nav-link">
         <ul>
-          <li><a href= "#beranda" class="link">Beranda</a></li>
+          <li><a href= "#" class="link">Beranda</a></li>
           <li><a href="#riwayat" class="link">Riwayat Keluhan</a></li>
           <li><a href="#tentang" class="link">Tentang Kita</a></li>
-          <li><a href="#" class="btn">Sign Up</a></li>
-
         </ul>
+      </div>
+       <!-- Hamburger Menu -->
+       <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
     </div>
   </nav>
-  <div class="wrapper">
-    <section id="keluhan-detail">
-      <h2>Riwayat Keluhan</h2>
-      <div class="keluhan-list">
-          <div class="keluhan-info">
-            <p><strong>Nomor Antrian :</strong> 01</p>
-            <p><strong>Nama :</strong> Akmal Tezar</p>
-            <p><strong>Dokter :</strong> Dr. Senku</p>
-            <p><strong>Tanggal Keluhan :</strong> 27-05-2025</p>
+    <!-- Content -->
+    <div class="container-content">
+      <div class="card">
+        <div class="card_title">
+          <img src="../assets/img/person.png" alt="">
+          <h2>Detail Riwayat Keluhan</h2>
         </div>
+        <div class="form">
+            <div class="chard-row">
+                <div class="chard-content-1">
+                  <div class="title">
+                    <h1>Resep Digital</h1>
+                  </div>
+                  <div class="pra-resep">           
+                      <p>No.Resep: MS2405160001</p>
+                      <p class="kanan">02 Juni 2025</p>
+                  </div>
+                  <div class="info">
+                    <div class="info-1">
+                      <p>Dokter
+                        <br>No.STR
+                        <br>Spesialis
+                      </p>
+                    </div>
+                    <div class="info-2">
+                      <p>Dr. Senku
+                        <br>34556782910 
+                        <br>THT
+                      </p>
+                    </div>
+                    <div class="info-3">
+                      <p>Pasien
+                        <br>Jenis Kelamin
+                        <br>Usia
+                      </p>
+                    </div>
+                    <div class="info-4">
+                      <p>Akmal Tezar
+                        <br>Laki-Laki
+                        <br>23
+                      </p>
+                    </div>
+                  </div>
 
-        <div class="keluhan">
-            <p><strong>Keluhan 1 :</strong> Telinga tidak bisa mendengar sebelah</p>
-            <p><strong>Keluhan 2 :</strong> Muncul dengung pada telinga</p>
-        </div>
+                    <div class="answer">
+                      <div class="answer1">
+                        <p class="satu">Keluhan</p>
+                        <div class="answer-1-nomor">
+                          <div>
+                            <p>1.<br><br>
+                            2.</p>
+                          </div>
+                          <p class="text">Muncul dengung pada telinga
+                            <br>
+                            Telinga tidak bisa mendengar sebelah
+                          </p>
+                        </div>
+                      </div>
+                      <div class="answer-2">
+                        <p class="dua">Penyakit</p>
+                        <p class="teks">Infeksi Gendang Telinga</p>
+                      </div>
+                      <div class="answer-3">
+                        <P class="tiga">Solusi Dokter</P>
+                        <div class="answer-3-nomor">
+                          <div class="icon">
+                            • <br>•<br>• 
+                          </div>
+                          <p class="teks">Mengurangi penggunaan earphone,headset atau alat lain yang dimasukan ke telinga
+                            <br>
+                            Gunakan obat tetes telinga seperti Ciprofloxsacin.
+                            <br>
+                            jika selama 5 hari tidak ada kemajuan periksakan lebih lanjut untuk mendapat 
+                            penanganan langsung
+                          </p>
+                         
+                        </div>
+                        </div>
+                      
+                    </div>
+              </div>
 
-        <div class="penyakit">
-            <p><strong>Nama Penyakit :</strong> <span class="highlight">Infeksi Telinga</span></p>
+          
         </div>
-
-        <div class="gejala">
-            <h3>Gejala :</h3>
-            <ul>
-                <li>Telinga tidak bisa mendengar sebelah</li>
-                <li>Muncul dengung pada telinga</li>
-            </ul>
-        </div>
-
-        <div class="solusi">
-            <h3>Solusi Dokter :</h3>
-            <ul>
-                <li>Mengurangi penggunaan earphone, headset atau alat lain yang dimasukkan ke telinga.</li>
-                <li>Gunakan obat tetes telinga untuk mengurangi peradangan.</li>
-                <li>Jika selama 5 hari tidak ada kemajuan, periksakan lebih lanjut untuk mendapatkan penanganan langsung.</li>
-            </ul>
-        </div>
-
-        <button class="back-btn">Kembali</button>
-    </div>
-</main>
-    </section>
-    <!-- Hero -->
-  </div>
-  <div class="contact">
-    <div class="wrapper">
-      <div class="footer">
-        <div class="footer-section">
-          <h2>MogaSehat</h2>
-          <p>Kami akan senentiasa memberikan <br> layanan terbaik.</p>
-        </div>
-        <div class="footer-section">
-          <h3>Hubungi Kami</h3>
-          <p>mogasehat@gmail.com</p>
-          <p>(+62) 897-5892</p>
-          <p>Jl.Cempaka, Semarang Tengah, Semarang</p>
-        </div>
+        <a href="#m1-o" class="link-1" id="m1-c">kembali</a>
       </div>
+      
     </div>
+    <!-- Content -->
+
   </div>
+         <!-- Footer -->
+         <footer>
+          <div class="container-footer">
+              <div class="col-1">
+                <a href="#">MogaSehat</a>
+                  <p>Kami akan senantiasa memberikan layanan yang terbaik,Kami berkomitmen untuk memberikan solusi kesehatan yang mudah diakses, cepat, dan efektif melalui komunikasi yang jelas dan profesional.
+                  </p>
+              </div>
+              <div class="col-2">
+                  <h3>Quick Links</h3>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Categories</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Services</a></li>
+                  </ul>
+              </div>
+              <div class="col-3">
+                  <h3>Services</h3>
+                  <ul>
+                      <li><a href="#">HTML</a></li>
+                      <li><a href="#">CSS</a></li>
+                      <li><a href="#">JavaScript</a></li>
+                      <li><a href="#">React</a></li>
+                      <li><a href="#">Python</a></li>
+                      <li><a href="#">C++</a></li>
+                  </ul>
+              </div>
+              <div class="col-4">
+                  <h3>Newsletter</h3>
+                  <form>
+                      <i class="far fa-envelope"></i>
+                      <input type="email" placeholder="Enter your email" required>
+                      <button><i class="fas fa-arrow-right"></i></button>
+                  </form>
+                  <div class="social-icons">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-2">
+              <p>© 2021 | Made with ❤️ by Mubashar Dev. All Rights Reserved.</p>
+          </div>
+      </footer>
+         <!-- Footer -->
+
+  <script>
+     // Ambil semua elemen navlink
+     const navLinks = document.querySelectorAll('.nav-link a');
+
+// Loop untuk setiap navlink
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    // Hapus kelas 'active' dan 'inactive' dari semua navlink
+    navLinks.forEach(item => {
+      item.classList.remove('active');
+      item.classList.add('inactive');
+    });
+
+    // Tambahkan kelas 'active' pada link yang diklik
+    this.classList.add('active');
+    this.classList.remove('inactive');
+  });
+  
+});
+     // Fungsi untuk membuka dan menutup menu
+     function toggleMenu() {
+      const navLinks = document.querySelector('.nav-link');
+      const hamburger = document.querySelector('.hamburger');
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    }
+  </script>
 </body>
 
 </html>

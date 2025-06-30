@@ -20,7 +20,7 @@
 
 
 .container-content {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   align-items: center;
   display: flex;
@@ -34,32 +34,32 @@
 .card {
   border-radius: 20px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-  width: 600px;
-  height: 600px;
+  width: 100vh;
+  height: 70vh;
   background-color:  white
 
 }
 .card_title {
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
   text-align: center;
-  background: linear-gradient(to right, #5365F7, #4480F6);
+  background: #5267F7;
   width: 100%;
   height: 8%;
  
   
 }
 .card_title img{
-  width: 6%;
+  width: 5%;
   float: left;
   margin: 5px 0px 5px 45px;
 }
 .card_title h2 {
   -webkit-background-clip: text;
   color: white;
-  font-size: 20px;
+  font-size: 40px;
   font-family: var(--primary-Font);
   margin-bottom: 20px;
-  padding: 10px 10px 0px 5px;
+  padding: 15px 10px 0px 5px;
   float: left;
 }
 .form{
@@ -68,11 +68,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-
-
 }
 .chard-row {
-
   border-radius: 10px;
   width: 100%;
   height: 6rem;
@@ -112,9 +109,10 @@
   align-items: center;
 }
 .chard-content-2 p{
-  margin-right: 6rem;
+  margin-right: 60rem;
   font-size: 14px;
   font-family: var(--seccondary-font);
+  color: #6c6c6c;
 }
 .chard-content-2 a.link-1{
 
